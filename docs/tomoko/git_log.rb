@@ -36,6 +36,7 @@ File.open("git_commit.txt","r") do |file|
 
 
     end
+    p commits.uniq
     f.puts commits.join("\n").chomp,"\n"
     f.puts unit_array.uniq.join("\n"),"\n"
 
